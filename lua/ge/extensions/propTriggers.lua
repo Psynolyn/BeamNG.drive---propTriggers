@@ -1,6 +1,9 @@
 -- This Source Code Form is subject to the terms of the MIT License.
 -- Copyright (c) 2026 
 -- Author C6g3. 
+--
+-- For the latest updates, documentation, and examples, please check the official repository:
+-- GitHub: https://github.com/Psynolyn/BeamNG.drive---propTriggers
 
 
 local M = {}
