@@ -3,7 +3,7 @@
 -- Author C6g3. 
 --
 -- For the latest updates, documentation, and examples, please check the official repository:
--- GitHub: https://github.com/Psynolyn/BeamNG.drive---propTriggers
+-- GitHub: https://github.com/Psynolyn/BeamNG-propTriggers.git
 
 
 local M = {}
