@@ -8,12 +8,9 @@ Traditionally, BeamNG triggers (`vehicleTriggers`) are bound to static JBeam nod
 
 - **Live Prop Inheritance:** Triggers extract the real-time world transform (position & rotation) of any `targetProp` and follow it seamlessly.
 - **Mesh Triggers:** Adds a brand new `mesh` trigger type. You can use a `.obj` file to define the exact 3D shape of your clickable area instead of relying on basic boxes or spheres.
-- **Native UI Integration:** Fully supports the vanilla BeamNG `ui_bindingsLegend`. When a player hovers over your custom trigger, the action title and keyboard shortcut appear in the bottom-left corner exactly like a native game trigger.
-- **Dynamic Event Links:** Features a `propTriggerEventLinks` system that works identically to `triggerEventLinks2`, routing custom string IDs straight to your `vehicle_name.interaction.json` logic.
+- **Native UI Integration:** Fully supports the vanilla BeamNG `ui_bindingsLegend`. When a player hovers over your custom trigger, the action title and keyboard shortcut appear in the top-left corner exactly like a native game trigger.
+- **Dynamic Event Links:** Features a `propTriggerEventLinks` system that works identically to `triggerEventLinks2`.
 - **Transform Offsets:** Easily offset the clickable area relative to the prop using `baseTranslation` and `baseRotation`.
-- **Proximity Fading:** Trigger debug visualization gracefully fades in and out based on camera proximity and mouse hover.
-
----
 
 ## Installation
 
@@ -37,7 +34,7 @@ This example demonstrates how to create a trigger that uses a custom `.obj` mesh
     ["id", "targetProp", "type", "size", "meshName", "baseTranslation", "baseRotation", "action"],
     
     // "cruisecontroll_+" is the trigger ID.
-    // "steering_wheel" is the name of the mesh defined in the "props" section.
+    // "steering_wheel" is the name of the mesh defined in the "mesh" section when defining props.
     // {"x":90, "y":0, "z":45} applies a local rotation offset.
     // {"x":0.1, "y":0, "z":0} applies a local translation offset along the newly rotated axes.
     ["cruisecontroll_+", "steering_wheel", "mesh", {"x":1, "y":1, "z":1}, "vehicles/your_vehicle/mesh/trigger_box.obj", {"x":0.1, "y":0, "z":0}, {"x":90, "y":0, "z":45}, ""],
